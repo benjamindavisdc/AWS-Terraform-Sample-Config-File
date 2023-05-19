@@ -30,23 +30,27 @@ Initialize the Terraform configuration by running the following command:
 ```shell
 $ terraform init
 ```
+
 Preview the resources that will be created by executing the following command:
 ```shell
 $ terraform plan
 ```
+
 If the plan looks satisfactory, apply the Terraform configuration:
-shell
-Copy code
+```shell
 $ terraform apply
+```
+
 Terraform will prompt for confirmation. Type yes and press Enter to proceed.
 
 Wait for Terraform to provision the AWS resources. Once completed, it will output the public IP address of the newly created server.
 
 Access your instance using SSH by running the following command:
 
-shell
-Copy code
+```shell
 $ ssh -i /path/to/private/key.pem ec2-user@<public_ip>
+```
+
 Replace /path/to/private/key.pem with the path to your private key file and <public_ip> with the actual public IP address obtained from the Terraform output.
 
 You now have access to your AWS instance and can start using it according to your requirements.
@@ -57,9 +61,10 @@ Open your terminal and navigate to the cloned repository's directory.
 
 Run the following command to destroy the provisioned resources:
 
-shell
-Copy code
+```shell
 $ terraform destroy
+```
+
 Terraform will prompt for confirmation. Type yes and press Enter to proceed.
 
 Wait for Terraform to remove the AWS resources.
