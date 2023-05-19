@@ -16,9 +16,9 @@ Follow the instructions below to provision the AWS instance using Terraform:
 1. Clone this repository to your local machine.
 2. Navigate to the cloned repository's directory:
 
-shell
-Copy code
+```shell
 $ cd repository-directory
+```
 Open the main.tf file and update the values as per your requirements. Specifically, ensure the AWS region, VPC ID, security group settings, and AMI ID are correct.
 
 Provide your public key in the public_key field of the aws_key_pair.deployer resource block. Replace the *Key* placeholder with your public key.
@@ -27,13 +27,13 @@ If required, update the userdata.yaml file with your desired user data for the i
 
 Initialize the Terraform configuration by running the following command:
 
-shell
-Copy code
+```shell
 $ terraform init
+```
 Preview the resources that will be created by executing the following command:
-shell
-Copy code
+```shell
 $ terraform plan
+```
 If the plan looks satisfactory, apply the Terraform configuration:
 shell
 Copy code
