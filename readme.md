@@ -1,6 +1,6 @@
-# Terraform AWS Instance Provisioning
+# Bootstrap Sample Terraform AWS Instance Provisioning
 
-This repository contains the necessary Terraform code to provision an AWS instance with a specific VPC, security group, and user data.
+This repository contains the necessary Terraform code to provision an AWS instance with a specific VPC, security group, and user data, giving you a quickstart template to run a simple webpage.
 
 ## Prerequisites
 
